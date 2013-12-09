@@ -1,0 +1,8 @@
+<%= model.get('title') %>
+<% if(favorite) { %>
+  <button data-id=<%= model.get('id') %> class="hidden" class="favorite">Favorite</button>
+  <button data-id=<%= model.get('id') %> class="un-favorite">Unfavorite</button>
+<% } else { %>
+  <button data-id=<%= model.get('id') %> class="favorite">Favorite</button>
+  <button data-id=<%= model.get('id') %> class="hidden" class="un-favorite">Unfavorite</button>
+<% } %>
